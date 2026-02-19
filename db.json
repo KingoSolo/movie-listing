@@ -1,0 +1,13 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through dream-sharing technology...",
+      "rating": 4.7,
+      "genre": "Sci-Fi",
+      "image": "https://via.placeholder.com/400x600?text=Inception",
+      "isFavorite": false
+    }
+  ]
+}
