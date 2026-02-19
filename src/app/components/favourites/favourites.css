@@ -1,0 +1,35 @@
+.page { padding: 22px 0 40px; }
+.header { margin-bottom: 14px; }
+.header h2 { margin: 0 0 6px; }
+.muted { color: var(--muted); margin: 0; }
+
+.list { display: flex; flex-direction: column; gap: 12px; }
+
+.fav-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.mini-poster {
+  height: 70px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  display: grid;
+  place-items: center;
+}
+
+.mini-ph {
+  color: var(--muted);
+  font-size: 12px;
+  border: 1px dashed rgba(255,255,255,0.18);
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.content .title { margin: 0; font-size: 16px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }

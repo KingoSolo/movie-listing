@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-search-input',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './search-input.component.html',
-  styleUrls: ['./search-input.component.css']
+  templateUrl: './search-input.html',
+  styleUrls: ['./search-input.css']
 })
 export class SearchInputComponent {}

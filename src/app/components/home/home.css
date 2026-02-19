@@ -1,0 +1,30 @@
+.page { padding: 24px 0 40px; }
+
+.hero {
+  padding: 26px;
+  border-radius: 18px;
+}
+
+.hero-content h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.hero-content p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.section {
+  margin-top: 28px;
+}
+
+.section h2 { margin: 0 0 8px; }
+.muted { color: var(--muted); }
