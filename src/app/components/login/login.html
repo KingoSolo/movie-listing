@@ -3,16 +3,15 @@
     <h2>Login</h2>
     <p class="muted">Enter your email and password to continue.</p>
 
-    <form class="form">
+    <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <label>Email</label>
-      <input type="email" placeholder="you@example.com" />
-      <p class="error">[Error: invalid email]</p>
+      <input type="email" placeholder="you@example.com" formControlName="email" />
+     
 
       <label>Password</label>
-      <input type="password" placeholder="min 6 characters" />
-      <p class="error">[Error: password too short]</p>
-
-      <button class="btn primary" type="button">Login</button>
+      <input type="password" placeholder="min 6 characters"formControlName="password" />
+      
+      <button class="btn primary" type="submit" >Login</button>
     </form>
   </div>
 </section>

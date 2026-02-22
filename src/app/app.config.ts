@@ -1,5 +1,6 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter,HttpInterceptorFn } from '@angular/router';
+import { HttpInterceptor } from '@angular/common/http';
 
 import { routes } from './app.routes';
 

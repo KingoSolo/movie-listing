@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar';
+import { AuthServices } from './services/auth-services';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,10 @@ import { NavbarComponent } from './components/navbar/navbar';
 })
 export class App {
   protected readonly title = signal('entertainment-view');
+  
+  authenticator = inject(AuthServices)
+
+  isLoggedIn2(){
+    return this.authenticator.loggedIn()
+  }
 }

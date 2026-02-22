@@ -1,0 +1,26 @@
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#">
+      <span class="brand-dot"></span>
+      <span>SoloFlix</span>
+    </a>
+
+    <!-- SearchInput child component goes here -->
+    <div class="search-slot">
+      <!-- Placeholder: <app-search-input></app-search-input> -->
+      <div class="search-placeholder">[ SearchInput Component ]</div>
+    </div>
+
+    <div class="links" >
+      <a class="link" routerLink="/">Home</a>
+      <a class="link" routerLink="/movies">Movies</a>
+
+      <a class="link fav-link" href="#">
+        Favorites
+        <span class="badge">3</span>
+      </a>
+
+     <a > <button class="btn danger" type="button"  (click)="onLogout()">Logout</button></a>
+    </div>
+  </div>
+</nav>

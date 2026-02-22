@@ -1,53 +1,29 @@
 <section class="container page">
   <div class="header">
     <h2>Movies</h2>
-    <p class="muted">Showing results from db.json (placeholder).</p>
+    <p class="muted">Showing results of movies.</p>
   </div>
 
   <div class="grid">
     <!-- Movie Card Placeholder -->
-    <article class="movie card">
-      <div class="poster">
-        <div class="poster-ph">Image</div>
-      </div>
+    
 
+    @for(movie of myarray(); track movie.id){
+    <article class="movie card">
+      <div class="poster"><img src={{movie.image}} width="270" height="480" class="poster-ph"/></div>
       <div class="info">
         <div class="top">
-          <h3 class="title">Inception</h3>
-          <span class="rating">⭐ 4.7</span>
-        </div>
-
-        <p class="desc">
-          A mind-bending thriller about dreams within dreams (placeholder).
-        </p>
-
-        <div class="meta">
-          <span class="pill">Sci-Fi</span>
-          <span class="pill">Action</span>
-        </div>
-
-        <div class="actions">
-          <a class="btn" href="#">View Details</a>
-          <button class="btn primary" type="button">Add to Favorites</button>
-        </div>
-      </div>
-    </article>
-
-    <!-- Duplicate placeholders (you'll generate with *ngFor later) -->
-    <article class="movie card">
-      <div class="poster"><div class="poster-ph">Image</div></div>
-      <div class="info">
-        <div class="top">
-          <h3 class="title">Interstellar</h3>
+          <h3 class="title">{{movie.title}}</h3>
           <span class="rating">⭐ 4.6</span>
         </div>
-        <p class="desc">Exploration, time dilation, and feelings (placeholder).</p>
-        <div class="meta"><span class="pill">Drama</span><span class="pill">Sci-Fi</span></div>
+        <p class="desc">{{movie.description}}</p>
+        <div class="meta"><span class="pill">Drama</span><span class="pill">{{movie.genre}}</span></div>
         <div class="actions">
-          <a class="btn" href="#">View Details</a>
+          <a class="btn" [routerLink]="['/movies', movie.id]">View Details</a>
           <button class="btn primary" type="button">Add to Favorites</button>
         </div>
       </div>
     </article>
+    }
   </div>
 </section>

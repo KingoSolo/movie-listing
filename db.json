@@ -3,10 +3,55 @@
     {
       "id": 1,
       "title": "Inception",
-      "description": "A thief who steals corporate secrets through dream-sharing technology...",
+      "description": "A skilled thief is given a chance at redemption if he can successfully perform inception — planting an idea into someone's subconscious.",
+      "rating": 4.8,
+      "genre": "Sci-Fi",
+      "image": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 2,
+      "title": "Interstellar",
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity’s survival.",
       "rating": 4.7,
       "genre": "Sci-Fi",
-      "image": "https://via.placeholder.com/400x600?text=Inception",
+      "image": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "description": "Batman faces the Joker, a criminal mastermind who seeks to create chaos in Gotham City.",
+      "rating": 4.9,
+      "genre": "Action",
+      "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 4,
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of decency.",
+      "rating": 4.9,
+      "genre": "Drama",
+      "image": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 5,
+      "title": "Parasite",
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between a wealthy family and a poor household.",
+      "rating": 4.6,
+      "genre": "Thriller",
+      "image": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 6,
+      "title": "Avengers: Endgame",
+      "description": "The Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "rating": 4.5,
+      "genre": "Superhero",
+      "image": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
       "isFavorite": false
     }
   ]

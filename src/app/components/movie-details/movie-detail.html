@@ -1,23 +1,25 @@
 <section class="container page">
   <a class="back" href="#">← Back to Movies</a>
 
+
+  @if (movie(); as m){
   <div class="detail card">
     <div class="left">
       <div class="poster">
-        <div class="poster-ph">Movie Image</div>
+        <div class="poster-ph"></div>
       </div>
     </div>
 
     <div class="right">
-      <h2 class="title">Movie Title (placeholder)</h2>
+      <h2 class="title">{{m.title}})</h2>
 
       <div class="row">
-        <span class="pill">Genre: Sci-Fi</span>
-        <span class="pill">Rating: ⭐ 4.5</span>
+        <span class="pill">{{m.genre}}</span>
+        <span class="pill">{{m.rating}}</span>
       </div>
 
       <p class="desc">
-        Movie description goes here. Keep it readable. (placeholder)
+        {{m.description}}
       </p>
 
       <div class="actions">
@@ -26,4 +28,5 @@
       </div>
     </div>
   </div>
+}
 </section>
