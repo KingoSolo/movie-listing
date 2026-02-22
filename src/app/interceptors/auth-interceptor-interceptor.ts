@@ -1,15 +1,13 @@
 import { HttpInterceptorFn } from '@angular/common/http';
 
 export const authInterceptorInterceptor: HttpInterceptorFn = (req, next) => {
+  const email = localStorage.getItem('userEmail')?.trim();
 
-  const email = localStorage.getItem('userEmail')
+  if (!email) return next(req);
 
-  if (email){
-     const clone = req.clone({
-     setHeaders:{"x-user":email}
-  })
-  return next(clone)
-  }
- 
-  return next(req);
+  return next(
+    req.clone({
+      setHeaders: { 'x-user': email }
+    })
+  );
 };
