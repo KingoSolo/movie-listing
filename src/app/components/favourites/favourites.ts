@@ -14,6 +14,7 @@ export class FavoritesComponent {
   favoritesService = inject(FavoritesService);
 
   favs = computed(() => this.favoritesService.favorites());
+  favCount = computed(() => this.favoritesService.count());
 
   remove(id:  number) {
     this.favoritesService.remove(id);

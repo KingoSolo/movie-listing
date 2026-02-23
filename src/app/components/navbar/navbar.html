@@ -15,9 +15,9 @@
       <a class="link" routerLink="/">Home</a>
       <a class="link" routerLink="/movies">Movies</a>
 
-      <a class="link fav-link" href="#">
+      <a class="link fav-link" routerLink="/favorites">
         Favorites
-        <span class="badge">3</span>
+        <span class="badge">{{ favCount() }}</span>
       </a>
 
      <a > <button class="btn danger" type="button"  (click)="onLogout()">Logout</button></a>

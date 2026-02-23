@@ -7,11 +7,12 @@ export class FavoritesService {
 
 
   favorites = computed(() => this._favorites());
+   count = computed(() => this._favorites().length);
 
   add(movie: Movie) {
     const exists = this._favorites().some(m => m.id === movie.id);
     if (exists) return; 
-    
+
     this._favorites.update(list => [...list, movie]);
   }
 
