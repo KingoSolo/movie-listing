@@ -20,7 +20,9 @@
         <div class="meta"><span class="pill">Drama</span><span class="pill">{{movie.genre}}</span></div>
         <div class="actions">
           <a class="btn" [routerLink]="['/movies', movie.id]">View Details</a>
-          <button class="btn primary" type="button">Add to Favorites</button>
+          <button class="btn primary" type="button" (click)="addToFavorites(movie)">
+            Add to Favorites
+          </button>
         </div>
       </div>
     </article>

@@ -1,34 +1,32 @@
 <section class="container page">
   <div class="header">
     <h2>Your Favorites</h2>
-    <p class="muted">Movies you added show up here (placeholder).</p>
+    <p class="muted">Movies you added show up here.</p>
   </div>
 
-  <div class="list">
-    <div class="fav-item card">
-      <div class="mini-poster"><div class="mini-ph">Img</div></div>
+  @if (favs().length === 0) {
+    <p class="muted">No favorites yet. Go add some 🔥</p>
+  } @else {
+    <div class="list">
+      @for (movie of favs(); track movie.id) {
+        <div class="fav-item card">
+          <div class="mini-poster">
+            <img [src]="movie.image" width="80" height="120" alt="{{movie.title}}" />
+          </div>
 
-      <div class="content">
-        <h3 class="title">Inception</h3>
-        <p class="muted">Sci-Fi • ⭐ 4.7</p>
-      </div>
+          <div class="content">
+            <h3 class="title">{{ movie.title }}</h3>
+            <p class="muted">{{ movie.genre }}</p>
+          </div>
 
-      <div class="actions">
-        <a class="btn" href="#">View</a>
-        <button class="btn danger" type="button">Remove</button>
-      </div>
+          <div class="actions">
+            <a class="btn" [routerLink]="['/movies', movie.id]">View</a>
+            <button class="btn danger" type="button" (click)="remove(movie.id)">
+              Remove
+            </button>
+          </div>
+        </div>
+      }
     </div>
-
-    <div class="fav-item card">
-      <div class="mini-poster"><div class="mini-ph">Img</div></div>
-      <div class="content">
-        <h3 class="title">Interstellar</h3>
-        <p class="muted">Sci-Fi • ⭐ 4.6</p>
-      </div>
-      <div class="actions">
-        <a class="btn" href="#">View</a>
-        <button class="btn danger" type="button">Remove</button>
-      </div>
-    </div>
-  </div>
+  }
 </section>
